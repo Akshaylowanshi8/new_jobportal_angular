@@ -1,0 +1,146 @@
+
+
+<div class="">
+
+
+<div class="w-full p-5 flex justify-center gap-7 bg-slate-300" > 
+  <div class="flex items-center justify-center h-full">
+    <button
+      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+      type="button"
+      (click)="isdisplay(true)"    >
+    your Post job 
+    </button>
+    <button
+      class="text-white bg-gradient-to-r from-red-500 via-red-600 to-red-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+      type="button"
+      (click)="isdisplay(false)" >jobseekers
+    </button>
+    <button
+      class="text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-400/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+      type="button"
+    routerLink = '/postnewjob'  >
+       Post new job 
+     </button>
+  
+  </div>
+  
+</div>
+<div class=" mx-auto bg-white p-9 rounded-lg shadow-md">
+    <ng-container *ngIf="!display; else elseTemplate">
+        <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-md">
+            <thead>
+              <tr class="bg-gray-200 border-b">
+                <th class="py-2 px-4 text-left text-gray-600">id</th>
+                <th class="py-2 px-4 text-left text-gray-600">Name</th>
+                <th class="py-2 px-4 text-left text-gray-600">email</th>
+                <th class="py-2 px-4 text-left text-gray-600"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let job of jobseeker" class="border-b hover:bg-gray-100">
+                <td class="py-2 px-4">{{ job.id }}</td>
+                <td class="py-2 px-4">{{ job.username}}</td>
+                <td class="py-2 px-4">{{ job.email}}</td>
+                <td class="py-2 px-4" >
+                  <button (click)="viewProfile(job.id)" class="cursor-pointer ring-1 ring-violet-900 uppercase bg-white px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#F44336,-0.5rem_-0.5rem_#00BCD4] transition">
+                   view profile
+                  </button></td>
+              </tr>
+            </tbody>
+          </table>
+          <ng-container *ngIf="profile">
+            <div class="container mx-auto p-4 md:p-8 bg-gray-100 rounded-lg shadow-lg">
+              <div class="profile-picture mb-6 flex justify-center">
+                <img *ngIf="profile.profilePicture" [src]="profile.profilePicture" alt="Profile Picture"
+                     class="w-32 h-32 object-cover rounded-full border-4 border-gray-300" />
+              </div>
+              <div class="education mb-6">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Education</h2>
+                <ul class="list-disc list-inside space-y-2">
+                  <li *ngFor="let edu of profile.education" class="text-lg text-gray-700">
+                    <strong class="text-blue-600">{{ edu.degree }}</strong> from {{ edu.university }} ({{ edu.year }})
+                  </li>
+                </ul>
+              </div>
+              <div class="work-experience mb-6">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Work Experience</h2>
+                <ul class="list-disc list-inside space-y-4">
+                  <li *ngFor="let work of profile.workExperience" class="text-lg text-gray-700">
+                    <strong class="text-blue-600">{{ work.title }}</strong> at {{ work.company }} ({{ work.startDate | date }} - {{ work.endDate | date }})
+                    <p class="mt-2">{{ work.description }}</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="skills">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Skills</h2>
+                <ul class="list-disc list-inside space-y-2">
+                  <li *ngFor="let skill of profile.skills" class="text-lg text-gray-700">
+                    {{ skill.name }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </ng-container>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <table class="min-w-[90%] bg-white border border-gray-200 rounded-lg shadow-md">
+            <thead>
+              <tr class="bg-gray-200 border-b">
+                <th class="py-2 px-4 text-left text-gray-600">Company</th>
+                <th class="py-2 px-4 text-left text-gray-600">Description</th>
+                <th class="py-2 px-4 text-left text-gray-600">ID</th>
+                <th class="py-2 px-4 text-left text-gray-600">Industry</th>
+                <th class="py-2 px-4 text-left text-gray-600">Location</th>
+                <th class="py-2 px-4 text-left text-gray-600">Posted Date</th>
+                <th class="py-2 px-4 text-left text-gray-600">Recruiter ID</th>
+                <th class="py-2 px-4 text-left text-gray-600">Requirements</th>
+                <th class="py-2 px-4 text-left text-gray-600">Title</th>
+                <th class="py-2 px-4 text-left text-gray-600">Type</th>
+                <th class="py-2 px-4 text-left text-gray-600">edit post</th>
+                <th class="py-2 px-4 text-left text-gray-600">Delete</th>
+
+
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let job of post" class="border-b hover:bg-gray-100">
+                <td class="py-2 px-4">{{ job.company }}</td>
+                <td class="py-2 px-4">{{ job.description }}</td>
+                <td class="py-2 px-4">{{ job.id }}</td>
+                <td class="py-2 px-4">{{ job.industry }}</td>
+                <td class="py-2 px-4">{{ job.location }}</td>
+                <td class="py-2 px-4">{{ job.postedDate }}</td>
+                <td class="py-2 px-4">{{ job.recruiterId }}</td>
+                <td class="py-2 px-4">{{ job.requirements }}</td>
+                <td class="py-2 px-4">{{ job.title }}</td>
+                <td class="py-2 px-4">{{ job.type }}</td>
+                <td class="py-2 px-4"  [routerLink]="['/updatepost', job.id,]" >
+                      <div class="flex gap-2 text-gray-600 hover:scale-110 duration-200 hover:cursor-pointer">
+                    <svg class="w-6 stroke-green-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                    </svg>
+                    <button class="font-semibold text-sm text-green-700"   >Edit</button>
+                </div> 
+              </td>
+                <td class="py-2 px-4">  
+                 <div (click)="deletePost(job.id)" class="flex gap-2 text-gray-600 hover:scale-110 duration-200 hover:cursor-pointer">
+                    <svg class="w-6 stroke-red-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                    <button  class="font-semibold text-sm text-red-700">Delete</button>  </div>
+                
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        
+    </ng-template>
+      </div>
+
+</div>
+
+
+
+
+  

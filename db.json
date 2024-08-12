@@ -1,0 +1,527 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "role": "jobseeker",
+      "username": "jobseeker1",
+      "password": "password1",
+      "email": "jobseeker1@example.com"
+    },
+    {
+      "id": "2",
+      "role": "recruiter",
+      "username": "recruiter1",
+      "password": "password2",
+      "email": "recruiter1@example.com"
+    },
+    {
+      "id": "1c20",
+      "role": "recruiter",
+      "username": "Askahy",
+      "email": "Akshay@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "fa58",
+      "role": "jobseeker",
+      "username": "Akshay2",
+      "email": "akshay2@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "ab25",
+      "role": "recruiter",
+      "username": "Akshay001",
+      "email": "Akshay001@gmial.com",
+      "password": "123"
+    },
+    {
+      "id": "0702",
+      "role": "jobseeker",
+      "username": "ram",
+      "email": "ram@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "6b4b",
+      "role": "recruiter",
+      "username": "akshay1112",
+      "email": "Akshay@gmail.com",
+      "password": "wwvwvw"
+    },
+    {
+      "id": "1a7c",
+      "role": "jobseeker",
+      "username": "akshay",
+      "email": "akshay@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "59c3",
+      "role": "jobseeker",
+      "username": "hkm",
+      "email": "hkm@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "46fa",
+      "role": "jobseeker",
+      "username": "ram2",
+      "email": "ram2@gmail.com",
+      "password": "123"
+    }
+  ],
+  "userProfiles": [
+    {
+      "id": "1",
+      "userId": 1,
+      "education": [
+        {
+          "id": 1,
+          "degree": "Bachelor's in Computer Science",
+          "university": "XYZ University",
+          "year": "2018"
+        }
+      ],
+      "workExperience": [
+        {
+          "id": 1,
+          "title": "Software Developer",
+          "company": "Tech Solutions Inc.",
+          "startDate": "2018-01-01",
+          "endDate": "2022-12-31",
+          "description": "Worked on web application development..."
+        }
+      ],
+      "skills": [
+        {
+          "id": 1,
+          "name": "JavaScript"
+        },
+        {
+          "id": 2,
+          "name": "Java"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Angular"
+        },
+        {
+          "id": 5,
+          "name": "React"
+        }
+      ],
+      "profilePicture": "jobseeker1_profile.jpg"
+    },
+    {
+      "id": "2",
+      "userId": "1a7c",
+      "education": [
+        {
+          "id": 1,
+          "degree": "Bachelor's in Computer Science",
+          "university": "XYZ University",
+          "year": "2018"
+        }
+      ],
+      "workExperience": [
+        {
+          "id": 1,
+          "title": "Software Developer",
+          "company": "Tech Solutions Inc.",
+          "startDate": "2018-01-01",
+          "endDate": "2022-12-31",
+          "description": "Worked on web application development..."
+        }
+      ],
+      "skills": [
+        {
+          "id": 1,
+          "name": "JavaScript"
+        },
+        {
+          "id": 2,
+          "name": "Java"
+        },
+        {
+          "id": 3,
+          "name": "Python"
+        },
+        {
+          "id": 4,
+          "name": "Angular"
+        },
+        {
+          "id": 5,
+          "name": "React"
+        }
+      ],
+      "profilePicture": "jobseeker1_profile.jpg"
+    },
+    {
+      "id": "d863",
+      "userId": "59c3",
+      "education": [
+        {
+          "id": 3120,
+          "degree": "B.tech",
+          "university": "rgpv bhopal",
+          "year": "3929"
+        }
+      ],
+      "workExperience": [
+        {
+          "id": 8842,
+          "title": "softwear devloper",
+          "company": "cybrom",
+          "startDate": "2024-01-04",
+          "endDate": "2024-08-07",
+          "description": "workin as a trenee"
+        }
+      ],
+      "skills": [
+        {
+          "id": 2477,
+          "name": "mern"
+        }
+      ],
+      "profilePicture": "https://th.bing.com/th/id/OIP.SaFBL7TdJr4lB9UA1skIQAHaFS?w=233&h=180&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      "id": "b4f7",
+      "userId": "fa58",
+      "education": [
+        {
+          "id": 6721,
+          "degree": "Bsc",
+          "university": "BU bhopal",
+          "year": "2023"
+        }
+      ],
+      "workExperience": [
+        {
+          "id": 5898,
+          "title": "custumer care",
+          "company": "xyz.pvt.Ltd",
+          "startDate": "2024-08-06",
+          "endDate": "2024-04-04",
+          "description": "sxnwlclwc wk ciwc wccwicw c"
+        }
+      ],
+      "skills": [
+        {
+          "id": 6999,
+          "name": "communication "
+        }
+      ],
+      "profilePicture": "https://th.bing.com/th/id/OIP.ZPSVBZYv5Gun6ULKiz2vAAHaE7?w=289&h=193&c=7&r=0&o=5&pid=1.7"
+    }
+  ],
+  "jobListings": [
+    {
+      "id": "1",
+      "title": "Software Engineer",
+      "company": "ABC Tech Solutions",
+      "location": "New York",
+      "postedDate": "2023-07-31",
+      "description": "We are looking for a skilled software engineer...",
+      "requirements": "Bachelor's degree in Computer Science...",
+      "type": "Full-time",
+      "industry": "Information Technology",
+      "recruiterId": 2
+    },
+    {
+      "id": "2",
+      "title": "Marketing Specialist",
+      "company": "XYZ Marketing Agency",
+      "location": "San Francisco",
+      "postedDate": "2023-07-30",
+      "description": "We need a creative marketing specialist...",
+      "requirements": "Bachelor's degree in Marketing...",
+      "type": "Contract",
+      "industry": "Marketing",
+      "recruiterId": 2
+    },
+    {
+      "id": "3",
+      "title": "SEO Specialist",
+      "company": "ABC Digital Solutions",
+      "location": "New York",
+      "postedDate": "2024-01-10",
+      "description": "Looking for an SEO specialist to improve our website rankings...",
+      "requirements": "Experience with SEO tools and techniques...",
+      "type": "Full-Time",
+      "industry": "Digital Marketing",
+      "recruiterId": 3
+    },
+    {
+      "id": "4",
+      "title": "Content Writer",
+      "company": "Content Creators Inc.",
+      "location": "Remote",
+      "postedDate": "2024-01-15",
+      "description": "Seeking a talented content writer to create engaging blog posts...",
+      "requirements": "Excellent writing and editing skills...",
+      "type": "Part-Time",
+      "industry": "Content Marketing",
+      "recruiterId": 4
+    },
+    {
+      "id": "5",
+      "title": "Social Media Manager",
+      "company": "Social Buzz Agency",
+      "location": "Los Angeles",
+      "postedDate": "2024-01-20",
+      "description": "Manage our social media profiles and create compelling content...",
+      "requirements": "Experience with social media platforms and analytics...",
+      "type": "Full-Time",
+      "industry": "Social Media",
+      "recruiterId": 5
+    },
+    {
+      "id": "6",
+      "title": "PPC Specialist",
+      "company": "AdMax Marketing",
+      "location": "Chicago",
+      "postedDate": "2024-01-25",
+      "description": "Looking for a PPC specialist to handle our paid advertising campaigns...",
+      "requirements": "Proven track record in managing PPC campaigns...",
+      "type": "Contract",
+      "industry": "Advertising",
+      "recruiterId": 6
+    },
+    {
+      "id": "7",
+      "title": "Email Marketing Manager",
+      "company": "MailPro Solutions",
+      "location": "San Francisco",
+      "postedDate": "2024-02-01",
+      "description": "Oversee email marketing strategies and campaign executions...",
+      "requirements": "Experience with email marketing tools and best practices...",
+      "type": "Full-Time",
+      "industry": "Email Marketing",
+      "recruiterId": "ab25"
+    },
+    {
+      "id": "8",
+      "title": "Graphic Designer",
+      "company": "DesignCo",
+      "location": "Austin",
+      "postedDate": "2024-02-05",
+      "description": "Create visually appealing designs for various marketing materials...",
+      "requirements": "Proficiency in Adobe Creative Suite...",
+      "type": "Freelance",
+      "industry": "Design",
+      "recruiterId": 8
+    },
+    {
+      "id": "9",
+      "title": "Marketing Analyst",
+      "company": "Market Insights",
+      "location": "Seattle",
+      "postedDate": "2024-02-10",
+      "description": "Analyze marketing data to provide actionable insights...",
+      "requirements": "Strong analytical skills and experience with data analysis tools...",
+      "type": "Full-Time",
+      "industry": "Market Research",
+      "recruiterId": "ab25"
+    },
+    {
+      "id": "10",
+      "title": "Product Marketing Manager",
+      "company": "InnovateTech",
+      "location": "Boston",
+      "postedDate": "2024-02-15",
+      "description": "Develop and execute marketing strategies for new products...",
+      "requirements": "Experience in product marketing and strategy...",
+      "type": "Full-Time",
+      "industry": "Technology",
+      "recruiterId": 10
+    },
+    {
+      "id": "11",
+      "title": "Brand Strategist",
+      "company": "BrandBuild Agency",
+      "location": "San Diego",
+      "postedDate": "2024-02-20",
+      "description": "Create and implement brand strategies to enhance company image...",
+      "requirements": "Proven experience in brand management...",
+      "type": "Contract",
+      "industry": "Brand Management",
+      "recruiterId": 11
+    },
+    {
+      "id": "12",
+      "title": "Market Research Coordinator",
+      "company": "Research Hub",
+      "location": "Philadelphia",
+      "postedDate": "2024-02-25",
+      "description": "Coordinate market research projects and analyze findings...",
+      "requirements": "Strong organizational skills and research experience...",
+      "type": "Full-Time",
+      "industry": "Market Research",
+      "recruiterId": 12
+    },
+    {
+      "id": "13",
+      "title": "Digital Marketing Specialist",
+      "company": "TechSavvy Marketing",
+      "location": "Denver",
+      "postedDate": "2024-03-01",
+      "description": "Implement and manage digital marketing strategies across various channels...",
+      "requirements": "Experience with SEO, SEM, and social media marketing...",
+      "type": "Full-Time",
+      "industry": "Digital Marketing",
+      "recruiterId": "ab25"
+    },
+    {
+      "id": "14",
+      "title": "Event Coordinator",
+      "company": "EventMaster",
+      "location": "Orlando",
+      "postedDate": "2024-03-05",
+      "description": "Plan and coordinate marketing events and promotional activities...",
+      "requirements": "Strong organizational and communication skills...",
+      "type": "Contract",
+      "industry": "Event Management",
+      "recruiterId": 14
+    },
+    {
+      "id": "15",
+      "title": "Content Marketing Strategist",
+      "company": "ContentMinds",
+      "location": "Atlanta",
+      "postedDate": "2024-03-10",
+      "description": "Develop and execute content marketing strategies to drive engagement...",
+      "requirements": "Experience with content creation and strategy development...",
+      "type": "Full-Time",
+      "industry": "Content Marketing",
+      "recruiterId": 15
+    },
+    {
+      "id": "16",
+      "title": "UX/UI Designer",
+      "company": "DesignGenius",
+      "location": "Portland",
+      "postedDate": "2024-03-15",
+      "description": "Design user-friendly interfaces and enhance user experience...",
+      "requirements": "Proficiency in UX/UI design principles and tools...",
+      "type": "Freelance",
+      "industry": "Design",
+      "recruiterId": 16
+    },
+    {
+      "id": "17",
+      "title": "Marketing Consultant",
+      "company": "ConsultCorp",
+      "location": "Dallas",
+      "postedDate": "2024-03-20",
+      "description": "Provide expert marketing advice and strategies to clients...",
+      "requirements": "Extensive experience in marketing consulting...",
+      "type": "Contract",
+      "industry": "Consulting",
+      "recruiterId": "ab25"
+    },
+    {
+      "id": "18",
+      "title": "Affiliate Marketing Manager",
+      "company": "AffilNet",
+      "location": "Las Vegas",
+      "postedDate": "2024-03-25",
+      "description": "Manage and optimize affiliate marketing programs and partnerships...",
+      "requirements": "Experience with affiliate marketing platforms...",
+      "type": "Full-Time",
+      "industry": "Affiliate Marketing",
+      "recruiterId": 18
+    },
+    {
+      "id": "19",
+      "title": "Creative Director",
+      "company": "CreativeWave",
+      "location": "Miami",
+      "postedDate": "2024-04-01",
+      "description": "Lead the creative team and oversee marketing campaigns...",
+      "requirements": "Strong leadership and creative skills...",
+      "type": "Full-Time",
+      "industry": "Advertising",
+      "recruiterId": 19
+    },
+    {
+      "id": "20",
+      "title": "E-commerce Manager",
+      "company": "ShopSmart",
+      "location": "San Jose",
+      "postedDate": "2024-04-05",
+      "description": "Manage and optimize e-commerce operations and strategies...",
+      "requirements": "Experience with e-commerce platforms and digital marketing...",
+      "type": "Full-Time",
+      "industry": "E-commerce",
+      "recruiterId": 20
+    },
+    {
+      "id": "63fe",
+      "userId": "59c3",
+      "education": [
+        {
+          "id": 5264,
+          "degree": "b.tech",
+          "university": "rgpv",
+          "year": "2020"
+        }
+      ],
+      "workExperience": [
+        {
+          "id": 8803,
+          "title": "no",
+          "company": "no",
+          "startDate": "2024-01-04",
+          "endDate": "2024-08-01",
+          "description": "no work freser"
+        }
+      ],
+      "skills": [
+        {
+          "id": 7524,
+          "name": "html ,js ,css"
+        }
+      ],
+      "profilePicture": "https://th.bing.com/th/id/OIP.SaFBL7TdJr4lB9UA1skIQAHaFS?w=233&h=180&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      "id": "60b4",
+      "recruiterId": "ab25",
+      "title": "web development ",
+      "company": "hk",
+      "location": "bhopal",
+      "postedDate": "2024-08-11",
+      "description": "web creattion jon buib wb   wxw",
+      "requirements": "jango ,react ,angular ,",
+      "type": "full-time",
+      "industry": "TI"
+    }
+  ],
+  "recruiters": [
+    {
+      "id": "1",
+      "userId": 2,
+      "companyName": "ABC Tech Solutions",
+      "email": "recruiter1@example.com",
+      "phone": "987-654-3210",
+      "address": "456 Park Avenue, San Francisco"
+    }
+  ],
+  "jobApplications": [
+    {
+      "id": "1",
+      "jobListingId": 1,
+      "userId": 1,
+      "applicationDate": "2023-07-31",
+      "status": "Pending",
+      "message": "I am interested in the Software Engineer position..."
+    }
+  ]
+}

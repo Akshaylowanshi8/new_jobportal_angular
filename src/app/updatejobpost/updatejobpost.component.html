@@ -1,0 +1,161 @@
+<div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+    <button
+    routerLink="/desh"
+      type="button"
+      class="bg-white text-center w-48 ring-1 ring-red-200 rounded-2xl h-14 relative font-sans text-black text-xl font-semibold group"
+    >
+      <div
+        class="bg-green-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500"
+      >
+        <svg
+          width="25px"
+          height="25px"
+          viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="#000000"
+            d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+          ></path>
+          <path
+            fill="#000000"
+            d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+          ></path>
+        </svg>
+      </div>
+      <p class="translate-x-2">Go Back</p>
+    </button>
+     <form [formGroup]="postnewjob" (ngSubmit)="onSubmitpost()" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Title Field -->
+      <div>
+        <label for="title" class="block text-gray-700 font-semibold mb-1">Title</label>
+        <input
+          placeholder="Title"
+          id="title"
+          formControlName="title"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        />
+        <div *ngIf="postnewjob.get('title')?.invalid && postnewjob.get('title')?.touched" class="text-red-500 text-sm mt-1">
+          <small *ngIf="postnewjob.get('title')?.errors?.['required']">Title is required.</small>
+          <small *ngIf="postnewjob.get('title')?.errors?.['minlength']">Title must be at least 3 characters long.</small>
+        </div>
+      </div>
+      
+      <!-- Company Field -->
+      <div>
+        <label for="company" class="block text-gray-700 font-semibold mb-1">Company</label>
+        <input
+          type="text"
+          id="company"
+          formControlName="company"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        />
+        <div *ngIf="postnewjob.get('company')?.invalid && postnewjob.get('company')?.touched" class="text-red-500 text-sm mt-1">
+          <small *ngIf="postnewjob.get('company')?.errors?.['required']">Company name is required.</small>
+          <small *ngIf="postnewjob.get('company')?.errors?.['minlength']">Company name must be at least 3 characters long.</small>
+        </div>
+      </div>
+  
+      <!-- Location Field -->
+      <div>
+        <label for="location" class="block text-gray-700 font-semibold mb-1">Location</label>
+        <input
+          type="text"
+          id="location"
+          formControlName="location"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        />
+        <div *ngIf="postnewjob.get('location')?.invalid && postnewjob.get('location')?.touched" class="text-red-500 text-sm mt-1">
+          <small *ngIf="postnewjob.get('location')?.errors?.['required']">Location is required.</small>
+          <small *ngIf="postnewjob.get('location')?.errors?.['minlength']">Location must be at least 3 characters long.</small>
+        </div>
+      </div>
+  
+      <!-- Posted Date Field -->
+      <div>
+        <label for="postedDate" class="block text-gray-700 font-semibold mb-1">Posted Date</label>
+        <input
+          type="date"
+          id="postedDate"
+          formControlName="postedDate"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        />
+        <div *ngIf="postnewjob.get('postedDate')?.invalid && postnewjob.get('postedDate')?.touched" class="text-red-500 text-sm mt-1">
+          <small *ngIf="postnewjob.get('postedDate')?.errors?.['required']">Posted Date is required.</small>
+        </div>
+      </div>
+  
+      <!-- Description Field -->
+      <div>
+        <label for="description" class="block text-gray-700 font-semibold mb-1">Description</label>
+        <input
+          type="text"
+          id="description"
+          formControlName="description"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        />
+        <div *ngIf="postnewjob.get('description')?.invalid && postnewjob.get('description')?.touched" class="text-red-500 text-sm mt-1">
+          <small *ngIf="postnewjob.get('description')?.errors?.['required']">Description is required.</small>
+          <small *ngIf="postnewjob.get('description')?.errors?.['minlength']">Description must be at least 3 characters long.</small>
+        </div>
+      </div>
+  
+      <!-- Requirements Field -->
+      <div>
+        <label for="requirements" class="block text-gray-700 font-semibold mb-1">Requirements</label>
+        <input
+          type="text"
+          id="requirements"
+          formControlName="requirements"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        />
+        <div *ngIf="postnewjob.get('requirements')?.invalid && postnewjob.get('requirements')?.touched" class="text-red-500 text-sm mt-1">
+          <small *ngIf="postnewjob.get('requirements')?.errors?.['required']">Requirements are required.</small>
+          <small *ngIf="postnewjob.get('requirements')?.errors?.['minlength']">Requirements must be at least 3 characters long.</small>
+        </div>
+      </div>
+  
+      <!-- Type Field -->
+      <div>
+        <label for="type" class="block text-gray-700 font-semibold mb-1">Type</label>
+        <input
+          type="text"
+          id="type"
+          formControlName="type"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        />
+        <div *ngIf="postnewjob.get('type')?.invalid && postnewjob.get('type')?.touched" class="text-red-500 text-sm mt-1">
+          <small *ngIf="postnewjob.get('type')?.errors?.['required']">Type is required.</small>
+          <small *ngIf="postnewjob.get('type')?.errors?.['minlength']">Type must be at least 3 characters long.</small>
+        </div>
+      </div>
+  
+      <!-- Industry Field -->
+      <div>
+        <label for="industry" class="block text-gray-700 font-semibold mb-1">Industry</label>
+        <input
+          type="text"
+          id="industry"
+          formControlName="industry"
+          class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        />
+        <div *ngIf="postnewjob.get('industry')?.invalid && postnewjob.get('industry')?.touched" class="text-red-500 text-sm mt-1">
+          <small *ngIf="postnewjob.get('industry')?.errors?.['required']">Industry is required.</small>
+          <small *ngIf="postnewjob.get('industry')?.errors?.['minlength']">Industry must be at least 3 characters long.</small>
+        </div>
+      </div>
+  
+      <!-- Submit Button -->
+      <div class="col-span-2">
+        <button
+          type="submit"
+          [disabled]="postnewjob.invalid"
+          class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-400"
+        >
+          Register
+        </button>
+      </div>
+    </form>
+  </div>
+  

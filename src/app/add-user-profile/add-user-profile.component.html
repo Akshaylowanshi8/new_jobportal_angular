@@ -1,0 +1,69 @@
+<div class="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+    <form (ngSubmit)="onSubmit()" [formGroup]="userForm" class="space-y-6">
+      <div formArrayName="education">
+        <label class="block text-sm font-medium text-gray-700">Education</label>
+        <div *ngFor="let edu of educationControls; let i = index" [formGroupName]="i" class="space-y-4">
+          <div>
+            <label for="degree-{{i}}" class="block text-sm font-medium text-gray-700">Degree</label>
+            <input id="degree-{{i}}" formControlName="degree" type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+          </div>
+          <div>
+            <label for="university-{{i}}" class="block text-sm font-medium text-gray-700">University</label>
+            <input id="university-{{i}}" formControlName="university" type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+          </div>
+          <div>
+            <label for="year-{{i}}" class="block text-sm font-medium text-gray-700">Year</label>
+            <input id="year-{{i}}" formControlName="year" type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+          </div>
+        </div>
+      </div>
+  
+      <!-- Work Experience -->
+      <div formArrayName="workExperience">
+        <label class="block text-sm font-medium text-gray-700">Work Experience</label>
+        <div *ngFor="let work of workExperienceControls; let i = index" [formGroupName]="i" class="space-y-4">
+          <div>
+            <label for="title-{{i}}" class="block text-sm font-medium text-gray-700">Title</label>
+            <input id="title-{{i}}" formControlName="title" type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+          </div>
+          <div>
+            <label for="company-{{i}}" class="block text-sm font-medium text-gray-700">Company</label>
+            <input id="company-{{i}}" formControlName="company" type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+          </div>
+          <div>
+            <label for="startDate-{{i}}" class="block text-sm font-medium text-gray-700">Start Date</label>
+            <input id="startDate-{{i}}" formControlName="startDate" type="date" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+          </div>
+          <div>
+            <label for="endDate-{{i}}" class="block text-sm font-medium text-gray-700">End Date</label>
+            <input id="endDate-{{i}}" formControlName="endDate" type="date" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+          </div>
+          <div>
+            <label for="description-{{i}}" class="block text-sm font-medium text-gray-700">Description</label>
+            <textarea id="description-{{i}}" formControlName="description" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm"></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Skills -->
+      <div formArrayName="skills">
+        <label class="block text-sm font-medium text-gray-700">Skills</label>
+        <div *ngFor="let skill of skillsControls; let i = index" [formGroupName]="i" class="space-y-4">
+          <div>
+            <label for="skillName-{{i}}" class="block text-sm font-medium text-gray-700">Skill</label>
+            <input id="skillName-{{i}}" formControlName="name" type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+          </div>
+        </div>
+      </div>
+  
+      <!-- Profile Picture -->
+      <div>
+        <label for="profilePicture" class="block text-sm font-medium text-gray-700">Profile Picture</label>
+        <input id="profilePicture" formControlName="profilePicture" type="text" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" />
+      </div>
+  
+      <!-- Submit Button -->
+      <button type="submit" class="disabled:bg-black px-4 py-2 bg-blue-500 text-white rounded-md">Submit</button>
+    </form>
+  </div>
+  
