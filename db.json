@@ -492,16 +492,16 @@
       "profilePicture": "https://th.bing.com/th/id/OIP.SaFBL7TdJr4lB9UA1skIQAHaFS?w=233&h=180&c=7&r=0&o=5&pid=1.7"
     },
     {
-      "id": "60b4",
-      "recruiterId": "ab25",
       "title": "web development ",
-      "company": "hk",
-      "location": "bhopal",
+      "company": "hkkvjjk",
+      "location": "bhopal (mp)",
       "postedDate": "2024-08-11",
       "description": "web creattion jon buib wb   wxw",
-      "requirements": "jango ,react ,angular ,",
+      "requirements": "jango ",
       "type": "full-time",
-      "industry": "TI"
+      "industry": "TI ",
+      "recruiterId": "ab25",
+      "id": "60b4"
     }
   ],
   "recruiters": [

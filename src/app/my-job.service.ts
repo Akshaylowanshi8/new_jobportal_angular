@@ -29,8 +29,7 @@ Registruser(user:Datas):Observable<any>{
       .pipe(catchError(this.errorHandler)).pipe(catchError(this.errorHandler))
        }
 
-       postnewjob
-       (user:Datas):Observable<any>{
+       postnewjob(user:Datas):Observable<any>{
         return this.httpClient.post(this.url2, JSON.stringify(user) ,this.httpOptions)
         .pipe(catchError(this.errorHandler))
          }
@@ -49,17 +48,19 @@ RegistrRec(user:Datas):Observable<any>{
     .pipe(catchError(this.errorHandler))
   }
 
-
+  postjobupdate(user:Datas , id:string ):Observable<any>{
+    console.log(this.url2+id);
+    return this.httpClient.put(this.url2 + id, JSON.stringify(user) ,this.httpOptions)
+    .pipe(catchError(this.errorHandler))
+     }
 
   userprofile(userid:String |null):Observable<any>{
   return this.httpClient.get(`http://localhost:3000/userProfiles/?userId=${userid}`)
   .pipe(catchError(this.errorHandler))
 }
 Deletepost(id:string):Observable<any>{
-
-  console.log(this.url2+id);
+  // console.log(this.url2+id);
   return this.httpClient.delete(this.url2 + id ,this.httpOptions)
-
   .pipe(catchError(this.errorHandler)).pipe(catchError(this.errorHandler))
    }
 
