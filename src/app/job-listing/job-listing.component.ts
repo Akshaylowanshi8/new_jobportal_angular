@@ -45,5 +45,4 @@ export class JobListingComponent {
     );
     this.noResults = this.filteredJobs.length === 0;
   }
-
 }
