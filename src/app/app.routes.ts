@@ -8,10 +8,13 @@ import { LoginComponent } from './login/login.component';
 import { AddUserProfileComponent } from './add-user-profile/add-user-profile.component';
 import { PostnewjobComponent } from './postnewjob/postnewjob.component';
 import { UpdatejobpostComponent } from './updatejobpost/updatejobpost.component';
+import { UserAddEducationComponent } from './user-add-education/user-add-education.component';
+import { UserAddworkComponent } from './user-addwork/user-addwork.component';
 
 export const routes: Routes = [
 
-    {path:"",component:HomeComponent},
+
+    { path: '', redirectTo: 'home', pathMatch: 'full'},
     {path:"home",component:HomeComponent},
     {path:"login" ,component:LoginComponent},
     {path:"registation",component:UserRegistrationComponent},
@@ -21,6 +24,9 @@ export const routes: Routes = [
     {path:'userprofile',component:UserProfileComponent},
     {path:"addprofile",component:AddUserProfileComponent },
     {path:"postnewjob",component:PostnewjobComponent},
-    {path:"updatepost/:id",component:UpdatejobpostComponent}
+    {path:"updatepost/:id",component:UpdatejobpostComponent},
+    {path:"AddEducation/:id",component:UserAddEducationComponent},
+    {path:"AddExperience/:id",component:UserAddworkComponent}
+
 
 ];

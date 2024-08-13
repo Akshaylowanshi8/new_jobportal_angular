@@ -12,17 +12,22 @@ templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+
+  data:Datas[] = []
   constructor( public _service:MyJobService, 
      private routes:Router
     
     ){ }
-  data:Datas[] = []
+
 
   ngOnInit(): void {
+  this.GetDeta()
+  }
+
+  GetDeta(){
     this._service.GetAllUser().subscribe((res:Datas[])=>{
-    // console.log(res);
-    this.data = res
-    })
+      this.data = res
+      })
   }
   loginfun(password:string,username:string){
 

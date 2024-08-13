@@ -50,7 +50,6 @@ export class UpdatejobpostComponent implements OnInit {
 
   initializeForm(data:Datas) {
     const id = localStorage.getItem('userid') || '';
-
     this.postnewjob.patchValue({
       title: data.title || '',
       company: data.company || '',

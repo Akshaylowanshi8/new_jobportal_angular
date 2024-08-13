@@ -1,0 +1,90 @@
+<div class="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg">
+  <!-- Navigation Button -->
+  <button
+    routerLink="/userprofile"
+    type="button"
+    class="bg-white text-center w-48 ring-1 ring-red-200 rounded-2xl h-14 relative font-sans text-black text-xl font-semibold group mb-8"
+  >
+    <div
+      class="bg-green-400 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500"
+    >
+      <svg width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#000000" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path>
+        <path fill="#000000" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path>
+      </svg>
+    </div>
+    <p class="translate-x-2">Go Back</p>
+  </button>
+
+  <!-- Form -->
+  <form [formGroup]="educationForm" (ngSubmit)="onSubmit()" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    <!-- Degree Field -->
+    <div>
+      <label for="degree" class="block text-gray-700 font-semibold mb-2">Degree</label>
+      <input
+        id="degree"
+        formControlName="degree"
+        class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        placeholder="Enter your degree"
+      />
+      <div *ngIf="educationForm.get('degree')?.invalid && educationForm.get('degree')?.touched" class="text-red-500 text-sm mt-1">
+        <small *ngIf="educationForm.get('degree')?.errors?.['required']">Degree is required.</small>
+      </div>
+    </div>
+    
+    <!-- Institution Field -->
+    <div>
+      <label for="university" class="block text-gray-700 font-semibold mb-2">Institution</label>
+      <input
+        id="university"
+        formControlName="university"
+        class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        placeholder="Enter your institution"
+      />
+      <div *ngIf="educationForm.get('university')?.invalid && educationForm.get('university')?.touched" class="text-red-500 text-sm mt-1">
+        <small *ngIf="educationForm.get('university')?.errors?.['required']">Institution is required.</small>
+      </div>
+    </div>
+    
+    <!-- Passout Date Field -->
+    <div>
+      <label for="year" class="block text-gray-700 font-semibold mb-2">Passout Date</label>
+      <input
+        type="date"
+        id="year"
+        formControlName="year"
+        class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      />
+      <div *ngIf="educationForm.get('year')?.invalid && educationForm.get('year')?.touched" class="text-red-500 text-sm mt-1">
+        <small *ngIf="educationForm.get('year')?.errors?.['required']">Passout Date is required.</small>
+      </div>
+    </div>
+   
+    <!-- Description Field -->
+    <div class="col-span-2">
+      <label for="description" class="block text-gray-700 font-semibold mb-2">Description</label>
+      <textarea
+        id="description"
+        formControlName="description"
+        class="w-full px-4 py-3 border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+        rows="6"
+        placeholder="Enter details about your education"
+      ></textarea>
+      <div *ngIf="educationForm.get('description')?.invalid && educationForm.get('description')?.touched" class="text-red-500 text-sm mt-1">
+        <small *ngIf="educationForm.get('description')?.errors?.['required']">Description is required.</small>
+      </div>
+    </div>
+    
+    <!-- Submit Button -->
+    <div class="col-span-2 mt-6">
+      <button
+        type="submit"
+        [disabled]="educationForm.invalid"
+        class="w-full bg-blue-500 text-white py-3 px-6 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-400 transition-colors"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>

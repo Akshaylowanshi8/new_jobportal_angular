@@ -69,57 +69,19 @@
       "username": "ram2",
       "email": "ram2@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "c738",
+      "role": "jobseeker",
+      "username": "abc raja",
+      "email": "raja@gmail.com",
+      "password": "123"
     }
   ],
   "userProfiles": [
     {
       "id": "1",
       "userId": 1,
-      "education": [
-        {
-          "id": 1,
-          "degree": "Bachelor's in Computer Science",
-          "university": "XYZ University",
-          "year": "2018"
-        }
-      ],
-      "workExperience": [
-        {
-          "id": 1,
-          "title": "Software Developer",
-          "company": "Tech Solutions Inc.",
-          "startDate": "2018-01-01",
-          "endDate": "2022-12-31",
-          "description": "Worked on web application development..."
-        }
-      ],
-      "skills": [
-        {
-          "id": 1,
-          "name": "JavaScript"
-        },
-        {
-          "id": 2,
-          "name": "Java"
-        },
-        {
-          "id": 3,
-          "name": "Python"
-        },
-        {
-          "id": 4,
-          "name": "Angular"
-        },
-        {
-          "id": 5,
-          "name": "React"
-        }
-      ],
-      "profilePicture": "jobseeker1_profile.jpg"
-    },
-    {
-      "id": "2",
-      "userId": "1a7c",
       "education": [
         {
           "id": 1,
@@ -183,42 +145,259 @@
           "description": "workin as a trenee"
         }
       ],
+      "profilePicture": "https://th.bing.com/th/id/OIP.SaFBL7TdJr4lB9UA1skIQAHaFS?w=233&h=180&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      "id": "63fe",
+      "userId": "59c3",
+      "education": [
+        {
+          "id": 5264,
+          "degree": "b.tech",
+          "university": "rgpv",
+          "year": "2020"
+        }
+      ],
+      "workExperience": [
+        {
+          "id": 8803,
+          "title": "no",
+          "company": "no",
+          "startDate": "2024-01-04",
+          "endDate": "2024-08-01",
+          "description": "no work freser"
+        }
+      ],
       "skills": [
         {
-          "id": 2477,
-          "name": "mern"
+          "id": 7524,
+          "name": "html ,js ,css"
         }
       ],
       "profilePicture": "https://th.bing.com/th/id/OIP.SaFBL7TdJr4lB9UA1skIQAHaFS?w=233&h=180&c=7&r=0&o=5&pid=1.7"
     },
     {
-      "id": "b4f7",
-      "userId": "fa58",
+      "id": "5bb5",
+      "userId": "1a7c",
       "education": [
         {
-          "id": 6721,
-          "degree": "Bsc",
-          "university": "BU bhopal",
+          "id": 5269,
+          "degree": "bcom",
+          "university": "bu bhopal",
           "year": "2023"
         }
       ],
       "workExperience": [
         {
-          "id": 5898,
-          "title": "custumer care",
-          "company": "xyz.pvt.Ltd",
+          "id": 3737,
+          "title": "no",
+          "company": "xyz .company",
           "startDate": "2024-08-06",
-          "endDate": "2024-04-04",
-          "description": "sxnwlclwc wk ciwc wccwicw c"
+          "endDate": "2024-01-03",
+          "description": "q,kmfdqehj"
         }
       ],
       "skills": [
         {
-          "id": 6999,
-          "name": "communication "
+          "id": 1336,
+          "skill": "java"
+        },
+        {
+          "id": 4278,
+          "name": ".net"
+        },
+        {
+          "id": 3137,
+          "name": "php"
+        },
+        {
+          "id": 5154,
+          "name": "java"
+        },
+        {
+          "id": 3807,
+          "name": "react"
+        },
+        {
+          "id": 2088,
+          "name": "flutter"
+        },
+        {
+          "id": 4416,
+          "name": "photo (1).jpg"
+        },
+        {
+          "id": 1061,
+          "name": "photo (2)-removebg-preview.jpg"
+        },
+        {
+          "id": 8586,
+          "name": "photo.jpg"
         }
       ],
-      "profilePicture": "https://th.bing.com/th/id/OIP.ZPSVBZYv5Gun6ULKiz2vAAHaE7?w=289&h=193&c=7&r=0&o=5&pid=1.7"
+      "profilePicture": "https://th.bing.com/th/id/OIP.hslXWit5HgM-qo2bjLD0CAHaGL?w=192&h=180&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      "id": "ee2c",
+      "userId": "fa58",
+      "education": [
+        {
+          "id": 2286,
+          "degree": "btech ",
+          "university": "jnu bhopal",
+          "year": "2000"
+        },
+        {
+          "degree": "bsc",
+          "institution": "bhopal gov col",
+          "year": "2024-08-16",
+          "description": "uiiouyulkj",
+          "id": 7744
+        },
+        {
+          "degree": "Msc",
+          "institution": "hindu univercity",
+          "year": "2024-08-08",
+          "description": "uyhgq bniqhd qiudn ciuqn",
+          "id": 1796
+        },
+        {
+          "degree": "phd ",
+          "university": "banarsah University ",
+          "year": "2024-08-17",
+          "description": "th  njaba ikjga wkghwio ",
+          "id": 1698
+        }
+      ],
+      "workExperience": [
+        {
+          "id": 3623,
+          "title": "4  devloper",
+          "company": "wipro",
+          "startDate": "2021-06-13",
+          "endDate": "2024-08-13",
+          "description": "jfhiewqhf  kijfhwe niuhwfw iuhwfn  "
+        },
+        {
+          "title": "tester",
+          "company": "hackekernal",
+          "startDate": "2024-07-10",
+          "endDate": "2024-09-01",
+          "description": "kwjo oijwofm wihfwmf nwfm ",
+          "id": 2982
+        }
+      ],
+      "skills": [
+        {
+          "id": 8584,
+          "name": "mern jango"
+        },
+        {
+          "id": 5094,
+          "name": "java"
+        }
+      ],
+      "profilePicture": "https://th.bing.com/th/id/OIP.vB9pWB0Zvz_TrN5CKf9PBwHaLH?w=682&h=1023&rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "e440",
+      "userId": "c738",
+      "education": [
+        {
+          "id": 3247,
+          "degree": "b.tech ",
+          "university": "bhojpal university",
+          "year": "2023"
+        }
+      ],
+      "workExperience": [
+        {
+          "id": 9474,
+          "title": "softwere devloper",
+          "company": "cybrom",
+          "startDate": "2024-08-10",
+          "endDate": "2024-08-03",
+          "description": "in work as a tranee"
+        }
+      ],
+      "skills": [
+        {
+          "id": 5866,
+          "name": "java "
+        },
+        {
+          "id": 6906,
+          "name": "react"
+        },
+        {
+          "id": 5119,
+          "name": "css"
+        },
+        {
+          "id": 2075,
+          "name": "css"
+        },
+        {
+          "id": 2861,
+          "name": "angular"
+        },
+        {
+          "id": 2265,
+          "name": "cpp"
+        },
+        {
+          "id": 9066
+        },
+        {
+          "id": 1562,
+          "name": "html"
+        },
+        {
+          "id": 9989,
+          "name": ".net"
+        },
+        {
+          "id": 7778
+        },
+        {
+          "id": 4390,
+          "name": "css"
+        },
+        {
+          "id": 6819,
+          "name": "h"
+        }
+      ],
+      "profilePicture": "https://th.bing.com/th/id/OIP.8Mh8jvW8GjCtyh1yzVOMMgHaKu?w=115&h=180&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      "id": "a564",
+      "userId": "c738",
+      "education": [
+        {
+          "id": 7905,
+          "degree": "mcom",
+          "university": "raja bhoj",
+          "year": "2302"
+        }
+      ],
+      "workExperience": [
+        {
+          "id": 7484,
+          "title": "sevloper",
+          "company": "xyx.pvt.ltd",
+          "startDate": "2024-08-14",
+          "endDate": "2024-08-11",
+          "description": "kjhoirho2"
+        }
+      ],
+      "skills": [
+        {
+          "id": 6936,
+          "name": "java "
+        }
+      ],
+      "profilePicture": "https://th.bing.com/th/id/OIP.kqzMzniSJR1QMBuvnxbRowHaKS?pid=ImgDet&w=185&h=257&c=7"
     }
   ],
   "jobListings": [
@@ -415,16 +594,16 @@
       "recruiterId": 16
     },
     {
-      "id": "17",
       "title": "Marketing Consultant",
       "company": "ConsultCorp",
       "location": "Dallas",
       "postedDate": "2024-03-20",
       "description": "Provide expert marketing advice and strategies to clients...",
       "requirements": "Extensive experience in marketing consulting...",
-      "type": "Contract",
+      "type": "Contract :706727",
       "industry": "Consulting",
-      "recruiterId": "ab25"
+      "recruiterId": "ab25",
+      "id": "17"
     },
     {
       "id": "18",
@@ -461,47 +640,6 @@
       "type": "Full-Time",
       "industry": "E-commerce",
       "recruiterId": 20
-    },
-    {
-      "id": "63fe",
-      "userId": "59c3",
-      "education": [
-        {
-          "id": 5264,
-          "degree": "b.tech",
-          "university": "rgpv",
-          "year": "2020"
-        }
-      ],
-      "workExperience": [
-        {
-          "id": 8803,
-          "title": "no",
-          "company": "no",
-          "startDate": "2024-01-04",
-          "endDate": "2024-08-01",
-          "description": "no work freser"
-        }
-      ],
-      "skills": [
-        {
-          "id": 7524,
-          "name": "html ,js ,css"
-        }
-      ],
-      "profilePicture": "https://th.bing.com/th/id/OIP.SaFBL7TdJr4lB9UA1skIQAHaFS?w=233&h=180&c=7&r=0&o=5&pid=1.7"
-    },
-    {
-      "title": "web development ",
-      "company": "hkkvjjk",
-      "location": "bhopal (mp)",
-      "postedDate": "2024-08-11",
-      "description": "web creattion jon buib wb   wxw",
-      "requirements": "jango ",
-      "type": "full-time",
-      "industry": "TI ",
-      "recruiterId": "ab25",
-      "id": "60b4"
     }
   ],
   "recruiters": [

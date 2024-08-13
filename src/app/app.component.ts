@@ -13,25 +13,25 @@ import { AddUserProfileComponent } from "./add-user-profile/add-user-profile.com
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
+ title = 'new_Job_portal';
+  userinfo :any = ""
   constructor(private rout:Router){}
-  title = 'new_Job_portal';
-  userinfo :any=""
+  
+
 
 ngOnInit(): void {
-  const data = localStorage.getItem('role')
-  this.userinfo = data;
+this.GetData()
+ 
+}
+GetData(){   
+this.userinfo = localStorage.getItem('role')
 }
 
 
 logout(){
 localStorage.clear()
-  setTimeout(() => {
+this.ngOnInit()
 this.rout.navigateByUrl('home')
-window.location.reload()
-this.rout.navigateByUrl('home')
-
-  }, 300);
 }
 }
 
