@@ -8,7 +8,7 @@ import { Datas } from '../datas';
   selector: 'app-login',
   standalone: true,
   imports: [],
-templateUrl: './login.component.html',
+  templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
@@ -29,11 +29,11 @@ export class LoginComponent {
       this.data = res
       })
   }
+
   loginfun(password:string,username:string){
 
     console.log(this.data)
     const user = this.data.find(user => user.username === username);
-
     console.log(user);
     if (user) {
       if (user.password === password) {
@@ -63,13 +63,8 @@ export class LoginComponent {
         'Username not found:)',
         'info'
       )
-    
       return false; 
     }
-  
-    return
+  return
   }
-
-
-
 }

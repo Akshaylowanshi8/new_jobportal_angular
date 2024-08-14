@@ -16,10 +16,9 @@ export class JobListingComponent {
   job: any[] = [];
   filteredJobs: any[] = [];
   searchForm: FormGroup;
-  noResults: boolean = false; // Flag to show "No results found" message
+  noResults: boolean = false;
 
   constructor(private _jobService:MyJobService, private fb: FormBuilder) {
-    // Initialize the form group
     this.searchForm = this.fb.group({
       keyword: ['']
     });

@@ -195,6 +195,14 @@
           "startDate": "2024-08-06",
           "endDate": "2024-01-03",
           "description": "q,kmfdqehj"
+        },
+        {
+          "title": "sr.developer ",
+          "company": "accenture",
+          "startDate": "2024-08-05",
+          "endDate": "2024-08-16",
+          "description": "workind as a manger and project leder",
+          "id": 1945
         }
       ],
       "skills": [
@@ -235,7 +243,7 @@
           "name": "photo.jpg"
         }
       ],
-      "profilePicture": "https://th.bing.com/th/id/OIP.hslXWit5HgM-qo2bjLD0CAHaGL?w=192&h=180&c=7&r=0&o=5&pid=1.7"
+      "profilePicture": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
     },
     {
       "id": "ee2c",
@@ -297,7 +305,7 @@
           "name": "java"
         }
       ],
-      "profilePicture": "https://th.bing.com/th/id/OIP.vB9pWB0Zvz_TrN5CKf9PBwHaLH?w=682&h=1023&rs=1&pid=ImgDetMain"
+      "profilePicture": "https://th.bing.com/th/id/OIP.slA0IVF_ZRA0L1GyAlboLwHaKm?rs=1&pid=ImgDetMain"
     },
     {
       "id": "e440",

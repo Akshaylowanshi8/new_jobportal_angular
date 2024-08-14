@@ -10,6 +10,7 @@ import { PostnewjobComponent } from './postnewjob/postnewjob.component';
 import { UpdatejobpostComponent } from './updatejobpost/updatejobpost.component';
 import { UserAddEducationComponent } from './user-add-education/user-add-education.component';
 import { UserAddworkComponent } from './user-addwork/user-addwork.component';
+import { authGuard } from './services/auth.guard';
 
 export const routes: Routes = [
 
@@ -17,16 +18,16 @@ export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full'},
     {path:"home",component:HomeComponent},
     {path:"login" ,component:LoginComponent},
-    {path:"registation",component:UserRegistrationComponent},
-    {path:"peofile",component:UserProfileComponent},
-    {path:"desh",component:RecruitersDeshboardComponent},
+    {path:"registation",component:UserRegistrationComponent  },
+    {path:"peofile",component:UserProfileComponent ,canActivate:[authGuard]},
+    {path:"desh",component:RecruitersDeshboardComponent ,canActivate:[authGuard]}   ,
     {path:"job",component:JobListingComponent},
-    {path:'userprofile',component:UserProfileComponent},
-    {path:"addprofile",component:AddUserProfileComponent },
-    {path:"postnewjob",component:PostnewjobComponent},
-    {path:"updatepost/:id",component:UpdatejobpostComponent},
-    {path:"AddEducation/:id",component:UserAddEducationComponent},
-    {path:"AddExperience/:id",component:UserAddworkComponent}
+    {path:'userprofile',component:UserProfileComponent ,canActivate:[authGuard]},
+    {path:"addprofile",component:AddUserProfileComponent ,canActivate:[authGuard]},
+    {path:"postnewjob",component:PostnewjobComponent ,canActivate:[authGuard]},
+    {path:"updatepost/:id",component:UpdatejobpostComponent ,canActivate:[authGuard]} ,
+    {path:"AddEducation/:id",component:UserAddEducationComponent ,canActivate:[authGuard]},
+    {path:"AddExperience/:id",component:UserAddworkComponent ,canActivate:[authGuard]}
 
 
 ];
