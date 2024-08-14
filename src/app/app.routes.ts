@@ -11,6 +11,7 @@ import { UpdatejobpostComponent } from './updatejobpost/updatejobpost.component'
 import { UserAddEducationComponent } from './user-add-education/user-add-education.component';
 import { UserAddworkComponent } from './user-addwork/user-addwork.component';
 import { authGuard } from './services/auth.guard';
+import { ErrorComponent } from './error/error.component';
 
 export const routes: Routes = [
 
@@ -27,7 +28,9 @@ export const routes: Routes = [
     {path:"postnewjob",component:PostnewjobComponent ,canActivate:[authGuard]},
     {path:"updatepost/:id",component:UpdatejobpostComponent ,canActivate:[authGuard]} ,
     {path:"AddEducation/:id",component:UserAddEducationComponent ,canActivate:[authGuard]},
-    {path:"AddExperience/:id",component:UserAddworkComponent ,canActivate:[authGuard]}
+    {path:"AddExperience/:id",component:UserAddworkComponent ,canActivate:[authGuard]},
+    {path:"**" ,component:ErrorComponent}
+
 
 
 ];
